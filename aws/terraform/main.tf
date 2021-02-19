@@ -1,11 +1,11 @@
 terraform {
   required_version = ">=0.14.7"
   backend "s3" {
-    bucket = "glasswall-github-actions-terraform-tfstate"
-    key    = "terraform.tfstate"
-    region = "eu-west-1"
-    #    dynamodb_table = "terraform"
-    encrypt = true
+    bucket         = "glasswall-github-actions-terraform-tfstate"
+    key            = "terraform.tfstate"
+    region         = "eu-west-1"
+    dynamodb_table = "terraform"
+    encrypt        = true
   }
 }
 
