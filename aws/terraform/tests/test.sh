@@ -3,6 +3,9 @@
 ATTEMPTS=10
 COUNTER=0
 
+# wait a minute for instance to start/initialize
+sleep 60
+
 # save SSH key into the file
 echo "$ICAP_SSH_KEY" > key.pem
 chmod 600 key.pem
