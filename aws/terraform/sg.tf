@@ -29,8 +29,16 @@ resource "aws_security_group" "icap-server" {
 
   ingress {
     description = "icap"
-    from_port   = 31829
-    to_port     = 31829
+    from_port   = 1345
+    to_port     = 1345
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = "icap"
+    from_port   = 7000
+    to_port     = 7000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
