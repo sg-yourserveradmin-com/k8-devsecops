@@ -4,7 +4,7 @@ variable "aws_region" {
 }
 
 variable "icap-server-ami-id" {
-  default     = "ami-0716d365e0869d33d"
+  default     = "ami-0a68c69464a8909c6"
   description = "ICAP server AMI ID to deploy"
 }
 
